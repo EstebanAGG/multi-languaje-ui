@@ -10,13 +10,17 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ideas.PrimaryController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ideas.PrimaryController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -66,11 +70,65 @@
       </AnchorPane>
    </center>
    <bottom>
-      <ButtonBar BorderPane.alignment="CENTER">
+      <ButtonBar prefHeight="69.0" prefWidth="642.0" BorderPane.alignment="CENTER">
          <buttons>
             <Button mnemonicParsing="false" text="Button" />
             <Button mnemonicParsing="false" text="Button" />
          </buttons>
       </ButtonBar>
    </bottom>
+   <top>
+      <ButtonBar prefHeight="100.0" prefWidth="642.0" BorderPane.alignment="CENTER">
+         <buttons>
+            <ToggleButton mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/italia.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupo" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/estados-unidos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/espana.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/francia.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/reino-unido.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </ToggleButton>
+         </buttons>
+      </ButtonBar>
+   </top>
 </BorderPane>
