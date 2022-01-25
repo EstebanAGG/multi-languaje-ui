@@ -46,20 +46,20 @@
                         <TableView prefHeight="200.0" prefWidth="235.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columns>
                             <TableColumn prefWidth="75.0" text="%Nombre" />
-                            <TableColumn prefWidth="75.0" text="Apellidos" />
+                            <TableColumn prefWidth="75.0" text="%Apellidos" />
                           </columns>
                         </TableView>
                      </children>
                   </AnchorPane>
-                  <TextField promptText="Escribe lo que quieras" GridPane.rowIndex="2" />
+                  <TextField promptText="%textField" GridPane.rowIndex="2" />
                   <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <AreaChart layoutX="-188.0" layoutY="-150.0" prefHeight="250.0" prefWidth="312.0" title="Notas Diseño Interfaces" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <AreaChart layoutX="-188.0" layoutY="-150.0" prefHeight="250.0" prefWidth="312.0" title="%grafico" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <xAxis>
-                            <CategoryAxis label="Notas" side="BOTTOM" />
+                            <CategoryAxis label="%notas" side="BOTTOM" />
                           </xAxis>
                           <yAxis>
-                            <NumberAxis label="Medias" side="LEFT" />
+                            <NumberAxis label="%medias" side="LEFT" />
                           </yAxis>
                         </AreaChart>
                      </children>
@@ -72,17 +72,17 @@
    <bottom>
       <ButtonBar prefHeight="69.0" prefWidth="642.0" BorderPane.alignment="CENTER">
          <buttons>
-            <Button mnemonicParsing="false" text="Button" />
-            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="%boton1" />
+            <Button mnemonicParsing="false" text="%boton2" />
          </buttons>
       </ButtonBar>
    </bottom>
    <top>
       <ButtonBar prefHeight="100.0" prefWidth="642.0" BorderPane.alignment="CENTER">
          <buttons>
-            <ToggleButton mnemonicParsing="false">
+            <ToggleButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="Italiano">
                <graphic>
-                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="bItalia" fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@pictures/italia.png" />
                      </image>
@@ -92,36 +92,36 @@
                   <ToggleGroup fx:id="grupo" />
                </toggleGroup>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+            <ToggleButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="InglesUSA" toggleGroup="$grupo">
                <graphic>
-                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="bUsa" fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@pictures/estados-unidos.png" />
                      </image>
                   </ImageView>
                </graphic>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+            <ToggleButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="Español" toggleGroup="$grupo">
                <graphic>
-                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="bEspaña" fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@pictures/espana.png" />
                      </image>
                   </ImageView>
                </graphic>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+            <ToggleButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="Francés" toggleGroup="$grupo">
                <graphic>
-                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="bFrancia" fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@pictures/francia.png" />
                      </image>
                   </ImageView>
                </graphic>
             </ToggleButton>
-            <ToggleButton mnemonicParsing="false" toggleGroup="$grupo">
+            <ToggleButton contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="Ingles" toggleGroup="$grupo">
                <graphic>
-                  <ImageView fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="bIng" fitHeight="52.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@pictures/reino-unido.png" />
                      </image>
