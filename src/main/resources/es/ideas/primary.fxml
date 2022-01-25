@@ -38,14 +38,14 @@
                   <ChoiceBox fx:id="cbSemana" prefWidth="150.0" GridPane.rowIndex="1" />
                   <AnchorPane GridPane.columnSpan="2">
                      <children>
-                        <Label prefHeight="126.0" prefWidth="600.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label prefHeight="126.0" prefWidth="600.0" text="%label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
                         <TableView prefHeight="200.0" prefWidth="235.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="Nombre" />
+                            <TableColumn prefWidth="75.0" text="%Nombre" />
                             <TableColumn prefWidth="75.0" text="Apellidos" />
                           </columns>
                         </TableView>
