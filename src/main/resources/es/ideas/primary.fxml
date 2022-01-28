@@ -19,6 +19,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
+<?import javafx.scene.control.Tooltip?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ideas.PrimaryController">
     <center>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -48,6 +49,9 @@
                                                     </image>
                                                 </ImageView>
                                             </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Español" />
+                                            </tooltip>
                                            </ToggleButton>
                                         <ToggleButton fx:id="tbtnIn" mnemonicParsing="false" text="Inglés">
                                             <graphic>
@@ -57,6 +61,9 @@
                                                     </image>
                                                 </ImageView>
                                             </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Inglés" />
+                                            </tooltip>
                                             </ToggleButton>
                                         <ToggleButton fx:id="tbtnIT" mnemonicParsing="false" text="Italiano">
                                             <graphic>
@@ -66,6 +73,9 @@
                                                     </image>
                                                 </ImageView>
                                             </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Italiano" />
+                                            </tooltip>
                                            </ToggleButton>
                                         <ToggleButton fx:id="tbtnFr" mnemonicParsing="false" text="Frances">
                                             <graphic>
@@ -75,6 +85,9 @@
                                                     </image>
                                                 </ImageView>
                                             </graphic>
+                                            <tooltip>
+                                                <Tooltip text="Francés" />
+                                            </tooltip>
                                             </ToggleButton>
                                     </buttons>
                                 </ButtonBar>
