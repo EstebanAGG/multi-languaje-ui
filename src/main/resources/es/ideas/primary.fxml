@@ -11,6 +11,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +20,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<?import javafx.scene.control.Tooltip?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ideas.PrimaryController">
     <center>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
@@ -38,7 +38,7 @@
                         <ChoiceBox fx:id="cbSemana" prefWidth="150.0" GridPane.rowIndex="1" />
                         <AnchorPane GridPane.columnSpan="2">
                             <children>
-                                <Label prefHeight="126.0" prefWidth="600.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                <Label prefHeight="126.0" prefWidth="600.0" text="%label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                 <ButtonBar layoutX="190.0" layoutY="45.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="0">
                                     <buttons>
                                         <ToggleButton fx:id="tbtnES" mnemonicParsing="false" text="Español">
@@ -50,7 +50,7 @@
                                                 </ImageView>
                                             </graphic>
                                             <tooltip>
-                                                <Tooltip text="Español" />
+                                                <Tooltip text="%btnEspañol" />
                                             </tooltip>
                                            </ToggleButton>
                                         <ToggleButton fx:id="tbtnIn" mnemonicParsing="false" text="Inglés">
@@ -62,7 +62,7 @@
                                                 </ImageView>
                                             </graphic>
                                             <tooltip>
-                                                <Tooltip text="Inglés" />
+                                                <Tooltip text="%btnIngles" />
                                             </tooltip>
                                             </ToggleButton>
                                         <ToggleButton fx:id="tbtnIT" mnemonicParsing="false" text="Italiano">
@@ -74,7 +74,7 @@
                                                 </ImageView>
                                             </graphic>
                                             <tooltip>
-                                                <Tooltip text="Italiano" />
+                                                <Tooltip text="%btnItaliano" />
                                             </tooltip>
                                            </ToggleButton>
                                         <ToggleButton fx:id="tbtnFr" mnemonicParsing="false" text="Frances">
@@ -86,7 +86,7 @@
                                                 </ImageView>
                                             </graphic>
                                             <tooltip>
-                                                <Tooltip text="Francés" />
+                                                <Tooltip text="%btnFrances" />
                                             </tooltip>
                                             </ToggleButton>
                                     </buttons>
@@ -97,21 +97,21 @@
                             <children>
                                 <TableView prefHeight="200.0" prefWidth="235.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                     <columns>
-                                        <TableColumn prefWidth="75.0" text="Nombre" />
-                                        <TableColumn prefWidth="75.0" text="Apellidos" />
+                                        <TableColumn prefWidth="75.0" text="%nombre" />
+                                        <TableColumn prefWidth="75.0" text="%apellidos" />
                                     </columns>
                                 </TableView>
                             </children>
                         </AnchorPane>
-                        <TextField promptText="Escribe lo que quieras" GridPane.rowIndex="2" />
+                        <TextField promptText="%escribe" GridPane.rowIndex="2" />
                         <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
                             <children>
-                                <AreaChart layoutX="-188.0" layoutY="-150.0" prefHeight="250.0" prefWidth="312.0" title="Notas Diseño Interfaces" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <AreaChart layoutX="-188.0" layoutY="-150.0" prefHeight="250.0" prefWidth="312.0" title="%diseño" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                     <xAxis>
-                                        <CategoryAxis label="Notas" side="BOTTOM" />
+                                        <CategoryAxis label="%notas" side="BOTTOM" />
                                     </xAxis>
                                     <yAxis>
-                                        <NumberAxis label="Medias" side="LEFT" />
+                                        <NumberAxis label="%medias" side="LEFT" />
                                     </yAxis>
                                 </AreaChart>
                             </children>
@@ -124,8 +124,8 @@
     <bottom>
         <ButtonBar BorderPane.alignment="CENTER">
             <buttons>
-                <Button mnemonicParsing="false" text="Button" />
-                <Button mnemonicParsing="false" text="Button" />
+                <Button mnemonicParsing="false" text="%btnAceptar" />
+                <Button mnemonicParsing="false" text="%btnCancelar" />
             </buttons>
         </ButtonBar>
     </bottom>
