@@ -1,0 +1,4 @@
+.toggle-button{
+    -fx-content-display: graphic-only;
+    -fx-background-radius: 50%;
+}

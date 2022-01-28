@@ -10,17 +10,16 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.control.Tooltip?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ideas.PrimaryController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.ideas.PrimaryController">
     <center>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <children>
@@ -41,7 +40,7 @@
                                 <Label prefHeight="126.0" prefWidth="600.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                                 <ButtonBar layoutX="190.0" layoutY="45.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="0">
                                     <buttons>
-                                        <ToggleButton fx:id="tbtnES"  mnemonicParsing="false" text="Español">
+                                        <ToggleButton fx:id="tbtnES" mnemonicParsing="false" text="Español">
                                             <graphic>
                                                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -50,7 +49,7 @@
                                                 </ImageView>
                                             </graphic>
                                            </ToggleButton>
-                                        <ToggleButton fx:id="tbtnIn"  mnemonicParsing="false" text="Inglés">
+                                        <ToggleButton fx:id="tbtnIn" mnemonicParsing="false" text="Inglés">
                                             <graphic>
                                                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -59,7 +58,7 @@
                                                 </ImageView>
                                             </graphic>
                                             </ToggleButton>
-                                        <ToggleButton fx:id="tbtnIT"  mnemonicParsing="false" text="Italiano">
+                                        <ToggleButton fx:id="tbtnIT" mnemonicParsing="false" text="Italiano">
                                             <graphic>
                                                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
@@ -68,7 +67,7 @@
                                                 </ImageView>
                                             </graphic>
                                            </ToggleButton>
-                                        <ToggleButton fx:id="tbtnFr"  mnemonicParsing="false" text="Frances">
+                                        <ToggleButton fx:id="tbtnFr" mnemonicParsing="false" text="Frances">
                                             <graphic>
                                                 <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
