@@ -31,8 +31,14 @@ public class PrimaryController implements Initializable {
 
         //Inicialización del ComboBox con los días de la semana
         //También tiene que traducirse
-        String dias_semana[] = {"lunes", "martes", "miércoles", "jueves",
-                "viernes", "sábado", "domingo"};
+        String dias_semana[] = {rb.getString("l"),
+                rb.getString("m"),
+                rb.getString("x"),
+                rb.getString("j"),
+                rb.getString("v"),
+                rb.getString("s"),
+                rb.getString("d")};
+        cbSemana.setItems(FXCollections.observableArrayList(dias_semana));
         cbSemana.setItems(FXCollections.observableArrayList(dias_semana));
 
 
