@@ -41,6 +41,38 @@ public class PrimaryController implements Initializable {
         ToggleGroup toggleGroup = new ToggleGroup();
 
         toggleGroup.getToggles().addAll(tbtnES, tbtnIT, tbtnIn,tbtnFr);
+        toggleGroup.selectedToggleProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                ToggleButton toggleButton = (ToggleButton) newValue
+                        .getToggleGroup()
+                        .getSelectedToggle();
+
+                switch (toggleButton.getText()) {
+
+                    case "Italiano":
+                        Locale.setDefault(Locale.ITALIAN);
+                        break;
+                    case "Inglés":
+                        Locale.setDefault(Locale.US);
+                        break;
+                    case "Frances":
+                        Locale.setDefault(Locale.FRENCH);
+                        break;
+                    default:
+                        Locale.setDefault(new Locale("es"));
+                }
+
+                try {
+                    Parent parent = getLoader().load();
+                    MultiLenguajeUI.getStagePrimary().getScene().setRoot(parent);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                MultiLenguajeUI.getStagePrimary().show();
+
+
+            }
+        });
 
 
     }
