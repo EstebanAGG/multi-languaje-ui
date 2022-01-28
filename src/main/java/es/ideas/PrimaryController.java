@@ -14,11 +14,11 @@ public class PrimaryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+
         //Inicialización del ComboBox con los días de la semana
         //También tiene que traducirse
         String dias_semana[] = {"lunes", "martes", "miércoles", "jueves",
-            "viernes", "sábado", "domingo"};
-        cbSemana.setItems(FXCollections.observableArrayList(dias_semana));        
+                "viernes", "sábado", "domingo"};
+        cbSemana.setItems(FXCollections.observableArrayList(dias_semana));
     }
 }
