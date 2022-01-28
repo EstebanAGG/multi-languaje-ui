@@ -39,7 +39,7 @@ public class PrimaryController implements Initializable {
                 rb.getString("s"),
                 rb.getString("d")};
         cbSemana.setItems(FXCollections.observableArrayList(dias_semana));
-        cbSemana.setItems(FXCollections.observableArrayList(dias_semana));
+
 
 
         /*Inicialización del toggleGroup
