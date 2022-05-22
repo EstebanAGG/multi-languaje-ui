@@ -7,28 +7,38 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 /**
  * JavaFX App
  */
 public class MultiLenguajeUI extends Application {
 
-    private static Scene scene;
+    private static Stage escena;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        
+        MultiLenguajeUI.escena = stage;
+
+        FXMLLoader loader = new FXMLLoader();
+        //Localización de la interfaz
+        loader.setLocation(getClass().getResource("primary.fxml"));
+        //Localización de los archivos de traducción
+        loader.setResources(ResourceBundle.getBundle("es.ideas.i18n/traduccion",
+                Locale.getDefault()));
+        Parent raiz = loader.load();
+        
+        Scene scene = new Scene(raiz);
         stage.setScene(scene);
         stage.show();
+        
     }
 
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
-    }
-
-    private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MultiLenguajeUI.class.getResource(fxml + ".fxml"));
-        return fxmlLoader.load();
+    //Método getStage para poder utilizar el Stage en otras clases
+    public static Stage getStage(){
+        return escena;
     }
 
     public static void main(String[] args) {
